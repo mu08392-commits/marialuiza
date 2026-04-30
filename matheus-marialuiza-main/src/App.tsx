@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Send, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 export default function App() {
   const links = [
@@ -13,16 +13,18 @@ export default function App() {
       title: "Privacy",
       icon: (
         <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full overflow-hidden">
-          {/* Privacy Circle Logo Approximation */}
-          <svg viewBox="0 0 100 100" className="w-12 h-12">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#FF5C00" strokeWidth="6" />
-            <path 
-              d="M35 30 C35 30, 65 30, 65 50 C65 70, 35 70, 35 70 L35 30 M35 45 L55 45" 
-              fill="none" 
-              stroke="#FF5C00" 
-              strokeWidth="6" 
-              strokeLinecap="round" 
-            />
+          <svg viewBox="0 0 64 64" className="w-12 h-12">
+            <text
+              x="32"
+              y="46"
+              textAnchor="middle"
+              fontFamily="Arial Black, Arial, sans-serif"
+              fontWeight="900"
+              fontSize="48"
+              fill="#FF5C00"
+            >
+              P
+            </text>
           </svg>
         </div>
       ),
@@ -32,8 +34,20 @@ export default function App() {
       id: "telegram",
       title: "Telegram Grátis 🎁",
       icon: (
-        <div className="w-16 h-16 flex items-center justify-center bg-[#24A1DE] rounded-full text-white shadow-inner">
-          <Send size={32} className="ml-[-4px] mt-[2px]" fill="white" />
+        <div className="w-16 h-16 rounded-full overflow-hidden">
+          <svg viewBox="0 0 240 240" className="w-full h-full">
+            <defs>
+              <linearGradient id="tg-grad" x1="0.667" x2="0.417" y1="0.167" y2="0.75">
+                <stop offset="0" stopColor="#37aee2" />
+                <stop offset="1" stopColor="#1e96c8" />
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="120" fill="url(#tg-grad)" />
+            <path
+              fill="#fff"
+              d="M81 128.5l-21.4-6.7c-4.6-1.4-4.7-4.6 1-6.9l132.3-51c3.8-1.5 7.6 2 6 7.5l-22.5 106.4c-1.1 4.6-3.8 5.7-7.6 3.6L138.8 156l-19.4 18.7c-2 2-3.7 3.7-7.5 3.7l2.6-37.6 67.8-61.2c2.8-2.5-.6-3.8-4.4-1.4L75.4 122l-.2.5z"
+            />
+          </svg>
         </div>
       ),
       url: "#",
@@ -54,10 +68,9 @@ export default function App() {
           <div className="relative mb-6" id="avatar-container">
             <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)]">
               <img
-                src="https://images.unsplash.com/photo-1593133676864-50774a8029e5?auto=format&fit=crop&q=80&w=300&h=300"
+                src="/maria-luiza.jpg"
                 alt="Maria Luiza"
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
             <motion.div
