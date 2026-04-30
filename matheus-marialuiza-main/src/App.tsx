@@ -12,20 +12,8 @@ export default function App() {
       id: "privacy",
       title: "Privacy",
       icon: (
-        <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full overflow-hidden">
-          <svg viewBox="0 0 64 64" className="w-12 h-12">
-            <text
-              x="32"
-              y="46"
-              textAnchor="middle"
-              fontFamily="Arial Black, Arial, sans-serif"
-              fontWeight="900"
-              fontSize="48"
-              fill="#FF5C00"
-            >
-              P
-            </text>
-          </svg>
+        <div className="w-16 h-16 rounded-full overflow-hidden bg-[#F5EDE0]">
+          <img src="/privacy-logo.png" alt="Privacy" className="w-full h-full object-cover scale-125" />
         </div>
       ),
       url: "#",
@@ -35,22 +23,10 @@ export default function App() {
       title: "Telegram Grátis 🎁",
       icon: (
         <div className="w-16 h-16 rounded-full overflow-hidden">
-          <svg viewBox="0 0 240 240" className="w-full h-full">
-            <defs>
-              <linearGradient id="tg-grad" x1="0.667" x2="0.417" y1="0.167" y2="0.75">
-                <stop offset="0" stopColor="#37aee2" />
-                <stop offset="1" stopColor="#1e96c8" />
-              </linearGradient>
-            </defs>
-            <circle cx="120" cy="120" r="120" fill="url(#tg-grad)" />
-            <path
-              fill="#fff"
-              d="M81 128.5l-21.4-6.7c-4.6-1.4-4.7-4.6 1-6.9l132.3-51c3.8-1.5 7.6 2 6 7.5l-22.5 106.4c-1.1 4.6-3.8 5.7-7.6 3.6L138.8 156l-19.4 18.7c-2 2-3.7 3.7-7.5 3.7l2.6-37.6 67.8-61.2c2.8-2.5-.6-3.8-4.4-1.4L75.4 122l-.2.5z"
-            />
-          </svg>
+          <img src="/telegram-logo.png" alt="Telegram" className="w-full h-full object-cover" />
         </div>
       ),
-      url: "#",
+      url: "https://serverflow.dad/l/5e31a204?shk=614dxsy0",
     },
   ];
 
