@@ -16,7 +16,7 @@ export default function App() {
           <img src="/privacy-logo.png" alt="Privacy" className="w-full h-full object-cover scale-125" />
         </div>
       ),
-      url: "https://privacymariaa.site",
+      url: "https://privacymariaa.site/checkout/index.html",
     },
     {
       id: "telegram",
